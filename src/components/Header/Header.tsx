@@ -1,31 +1,8 @@
 import * as S from "./Header.styles";
 import { Images } from "../../assets/index";
-import { MenuIdEnum } from "../../constants/index";
+import { ROUTES } from "../../constants/routes";
 
 export const Header = () => {
-  const NavigationItems = [
-    {
-      text: "home",
-      to: MenuIdEnum.intro,
-    },
-    {
-      text: "projects",
-      to: MenuIdEnum.projects,
-    },
-    {
-      text: "skills",
-      to: MenuIdEnum.skills,
-    },
-    {
-      text: "resume",
-      to: MenuIdEnum.resume,
-    },
-    {
-      text: "hire me",
-      to: MenuIdEnum.contact,
-    },
-  ];
-
   return (
     <S.HeaderContainer>
       <S.LogoContainer>
@@ -37,10 +14,15 @@ export const Header = () => {
         </S.Title>
       </S.LogoContainer>
       <S.MenuContainer>
-        {NavigationItems.map(({ to, text }) => {
-          return <S.MenuButton key={to}>{text}</S.MenuButton>;
+        {ROUTES.map(({ name, path }) => {
+          return (
+            <S.StyledNavLink key={name} to={path}>
+              {name}
+            </S.StyledNavLink>
+          );
         })}
-        <S.MenuButton />
+        <S.Git src={Images.git} />
+        <S.Linked src={Images.linked} />
       </S.MenuContainer>
     </S.HeaderContainer>
   );
