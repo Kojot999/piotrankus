@@ -42,6 +42,14 @@ export const StyledNavLink = styled(NavLink)`
   margin-inline: 10px;
   cursor: pointer;
   text-decoration: none;
+  :hover {
+    text-shadow: 0px 10px 30px #12c6ff;
+    color: ${({ theme }) => theme.colors.primary};
+  }
+  &.active {
+    color: ${({ theme }) => theme.colors.primary};
+    text-shadow: 0px 10px 30px #12c6ff;
+  }
 `;
 
 export const Git = styled.img`
@@ -52,3 +60,5 @@ export const Git = styled.img`
 export const Linked = styled.img`
   width: 18px;
 `;
+
+export const Link = styled.a``;

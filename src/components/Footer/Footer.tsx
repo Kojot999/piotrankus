@@ -1,8 +1,11 @@
 import { Images } from "../../assets";
+import { useTranslation } from "../../hooks";
+import { NavLink } from "../widgets";
 import * as S from "./Footer.styles";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
+  const T = useTranslation();
   return (
     <S.FooterContainer>
       <S.LogoContainer>
@@ -17,9 +20,11 @@ export const Footer = () => {
         </S.RightsContainer>
       </S.LogoContainer>
       <S.MessageContainer>
-        <S.StyledNavLink key="contact" to="/contact">
-          Send message <S.MessageArrow src={Images.message} />
-        </S.StyledNavLink>
+        <NavLink
+          path="/contact"
+          text={T.components.footer.message}
+          img={Images.message}
+        ></NavLink>
       </S.MessageContainer>
     </S.FooterContainer>
   );

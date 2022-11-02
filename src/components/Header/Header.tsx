@@ -21,8 +21,12 @@ export const Header = () => {
             </S.StyledNavLink>
           );
         })}
-        <S.Git src={Images.git} />
-        <S.Linked src={Images.linked} />
+        <S.Link href="https://github.com/Kojot999" target="blank">
+          <S.Git src={Images.git} />
+        </S.Link>
+        <S.Link href="https://github.com/Kojot999" target="blank">
+          <S.Linked src={Images.linked} />
+        </S.Link>
       </S.MenuContainer>
     </S.HeaderContainer>
   );

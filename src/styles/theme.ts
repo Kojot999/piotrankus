@@ -5,6 +5,6 @@ export const theme: AppTheme = {
     background: "#fff",
     font: "#fff",
     input: "#fff",
-    primary: "#fff",
+    primary: "#12C6FF",
   },
 };

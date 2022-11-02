@@ -40,18 +40,3 @@ export const RightsContainer = styled.div`
 `;
 
 export const MessageContainer = styled.div``;
-
-export const StyledNavLink = styled(NavLink)`
-  color: ${({ theme }) => theme.colors.font};
-  background: linear-gradient(358.97deg, #12c6ff -76.06%, #031cff 177.92%);
-  border-radius: 1000px;
-  display: flex;
-  font-size: 15px;
-  padding: 5px 15px;
-  text-decoration: none;
-`;
-
-export const MessageArrow = styled.img`
-  margin-left: 20px;
-  padding-top: 1px;
-`;

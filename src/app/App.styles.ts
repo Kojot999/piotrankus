@@ -7,8 +7,6 @@ export const AppContainer = styled.div`
   background-image: url(${Images.backGround});
   background-repeat: no-repeat;
   background-size: cover;
-  overflow-x: hidden;
-  overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

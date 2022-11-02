@@ -4,7 +4,7 @@ import { AppRoutes } from "../types";
 export const ROUTES = [
   {
     name: "home",
-    path: "/",
+    path: "/home",
     component: Home,
   },
   {
