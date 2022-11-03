@@ -2,9 +2,14 @@ import styled from "styled-components";
 
 export const ResumeContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: left;
+  justify-content: space-between;
+  align-items: center;
   margin-inline: 10vw;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 export const TextContainer = styled.div`
@@ -27,4 +32,8 @@ export const Text = styled.h2`
   font-weight: normal;
   color: ${({ theme }) => theme.colors.font};
   opacity: 70%;
+`;
+
+export const ResumeImage = styled.img`
+  height: 60vh;
 `;

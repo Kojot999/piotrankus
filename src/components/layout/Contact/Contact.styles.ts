@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   display: flex;
-  flex-direction: column;
   margin-inline: 10vw;
+  justify-content: space-between;
   color: ${({ theme }) => theme.colors.font};
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 `;
 
 export const Header = styled.h1`
@@ -56,4 +56,8 @@ export const Email = styled.h3`
   font-size: 18px;
   font-weight: bold;
   margin: 0;
+`;
+
+export const HireImage = styled.img`
+  height: 60vh;
 `;

@@ -7,11 +7,18 @@ export const Resume = () => {
   const T = useTranslation();
   return (
     <S.ResumeContainer>
-      <S.TextContainer>
-        <S.Header>{T.components.resume.header}</S.Header>
-        <S.Text>{T.components.resume.text}</S.Text>
-      </S.TextContainer>
-      <Download text="Download PDF" file={Files.cv} img={Images.pdf}></Download>
+      <S.Wrapper>
+        <S.TextContainer>
+          <S.Header>{T.components.resume.header}</S.Header>
+          <S.Text>{T.components.resume.text}</S.Text>
+        </S.TextContainer>
+        <Download
+          text="Download PDF"
+          file={Files.cv}
+          img={Images.pdf}
+        ></Download>
+      </S.Wrapper>
+      <S.ResumeImage src={Images.resume} />
     </S.ResumeContainer>
   );
 };

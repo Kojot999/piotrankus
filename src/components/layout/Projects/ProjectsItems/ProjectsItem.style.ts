@@ -40,13 +40,25 @@ export const Text = styled.p`
 
 export const Technologies = styled.p`
   margin-top: 10px;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Link = styled.a`
   text-decoration: none;
+  display: flex;
   color: ${({ theme }) => theme.colors.font};
+`;
+
+export const LinkWeb = styled.a`
+  text-decoration: none;
+  display: flex;
+  color: ${({ theme }) => theme.colors.font};
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 5px 10px;
 `;
 
 export const Img = styled.img`
   margin-right: 5px;
+  width: 20px;
 `;

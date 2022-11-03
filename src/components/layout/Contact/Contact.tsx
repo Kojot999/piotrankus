@@ -21,8 +21,9 @@ export const Contact = () => {
             <S.ImgArrow src={Images.arrowDown} />
           </S.Wrapper>
         </S.Container>
+        <FormSection />
       </S.TextContainer>
-      <FormSection />
+      <S.HireImage src={Images.hire} />
     </S.ContactContainer>
   );
 };

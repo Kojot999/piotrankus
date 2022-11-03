@@ -19,7 +19,7 @@ export const en_GB: Dictionary = {
     },
     projects: {
       header: "my projects",
-      text: " this page lists some of my personal and work projects. every project has some story, click on the title to read",
+      text: " this page lists some of my personal and work projects. every project has some descriptions.",
     },
     skills: {
       header: "my skills",
