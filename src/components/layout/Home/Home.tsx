@@ -1,10 +1,10 @@
 import { Images } from "../../../assets";
-import { useTranslation } from "../../../hooks/useTranslations";
+import { useLanguageContext } from "../../../context/useLanguageContext";
 import { NavLink } from "../../widgets";
 import * as S from "./Home.styles";
 
 export const Home = () => {
-  const T = useTranslation();
+  const T = useLanguageContext();
   return (
     <S.HomeContainer>
       <S.TextContainer>

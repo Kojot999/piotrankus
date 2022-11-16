@@ -1,11 +1,12 @@
 import { Images } from "../../assets";
-import { useTranslation } from "../../hooks";
+import { useLanguageContext } from "../../context/useLanguageContext";
+
 import { NavLink } from "../widgets";
 import * as S from "./Footer.styles";
 
 export const Footer = () => {
   const year = new Date().getFullYear();
-  const T = useTranslation();
+  const T = useLanguageContext();
   return (
     <S.FooterContainer>
       <S.LogoContainer>

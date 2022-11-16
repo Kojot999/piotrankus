@@ -1,10 +1,10 @@
 import { AppTheme } from "../types";
 
-export const theme: AppTheme = {
+export const theme = {
   colors: {
     background: "#fff",
     font: "#fff",
-    input: "#fff",
+    hover: "#c4c4c4",
     primary: "#12C6FF",
   },
 };

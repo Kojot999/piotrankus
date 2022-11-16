@@ -44,7 +44,7 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   :hover {
     text-shadow: 0px 10px 30px #12c6ff;
-    color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.hover};
   }
   &.active {
     color: ${({ theme }) => theme.colors.primary};
@@ -62,3 +62,9 @@ export const Linked = styled.img`
 `;
 
 export const Link = styled.a``;
+
+export const Button = styled.button`
+  background: none;
+  border: none;
+  cursor: pointer;
+`;

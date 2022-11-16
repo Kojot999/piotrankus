@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Button, Form } from "semantic-ui-react";
 
 export const FormContainer = styled.div`
   display: flex;
@@ -13,9 +12,26 @@ export const Wrapper = styled.div`
   display: flex;
 `;
 
-export const StyledForm = styled(Form.Field)``;
+export const StyledForm = styled.form`
+  display: flex;
+  flex-direction: column;
+`;
 
-export const StyledButton = styled(Button)`
+export const StyledImput = styled.input`
+  background: none;
+  border: none;
+  color: ${({ theme }) => theme.colors.font};
+  text-decoration-line: underline;
+  text-decoration-style: "solid";
+  text-decoration-color: #12c6ff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+`;
+
+export const StyledButton = styled.button`
   color: ${({ theme }) => theme.colors.font};
   background: linear-gradient(358.97deg, #12c6ff -76.06%, #031cff 177.92%);
   border-radius: 1000px;
@@ -25,10 +41,13 @@ export const StyledButton = styled(Button)`
   font-size: 18px;
   padding: 5px 15px;
   text-decoration: none;
+  max-width: 220px;
+  margin: 15px;
+  cursor: pointer;
 `;
 
 export const Image = styled.img`
-  margin-left: 20px;
+  margin-left: 30px;
   height: 20px;
   width: 20px;
 `;

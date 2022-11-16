@@ -1,10 +1,10 @@
 import { Images } from "../../../assets";
-import { useTranslation } from "../../../hooks/useTranslations";
+import { useLanguageContext } from "../../../context/useLanguageContext";
 import * as S from "./Contact.styles";
 import { FormSection } from "./Form/Form";
 
 export const Contact = () => {
-  const T = useTranslation();
+  const T = useLanguageContext();
   return (
     <S.ContactContainer>
       <S.TextContainer>
