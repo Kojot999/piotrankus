@@ -1,5 +1,3 @@
-import { AppTheme } from "../types";
-
 export const theme = {
   colors: {
     background: "#fff",

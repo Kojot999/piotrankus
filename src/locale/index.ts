@@ -1,2 +1,1 @@
-export { en_GB } from "./translations";
-export { pl } from "./pl";
+export { translations } from "./translations";
