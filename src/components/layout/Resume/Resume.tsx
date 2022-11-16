@@ -1,10 +1,10 @@
 import { Files, Images } from "../../../assets";
-import { useTranslation } from "../../../hooks";
+import { useLanguageContext } from "../../../context/useLanguageContext";
 import { Download } from "../../widgets";
 import * as S from "./Resume.styles";
 
 export const Resume = () => {
-  const T = useTranslation();
+  const T = useLanguageContext();
   return (
     <S.ResumeContainer>
       <S.Wrapper>
@@ -13,7 +13,7 @@ export const Resume = () => {
           <S.Text>{T.components.resume.text}</S.Text>
         </S.TextContainer>
         <Download
-          text="Download PDF"
+          text={T.components.resume.download}
           file={Files.cv}
           img={Images.pdf}
         ></Download>

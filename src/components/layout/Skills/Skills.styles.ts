@@ -5,6 +5,7 @@ export const SkillsContainer = styled.div`
   flex-direction: column;
   align-items: left;
   margin-inline: 10vw;
+  margin-bottom: 30px;
 `;
 
 export const TextContainer = styled.div`

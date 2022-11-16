@@ -1,8 +1,14 @@
 import * as S from "./Header.styles";
 import { Images } from "../../assets/index";
-import { ROUTES } from "../../constants/routes";
+import { DictionaryLanguage } from "../../types/locale";
+import { useRouteDef } from "../../hooks/useRouteDef";
 
-export const Header = () => {
+export const Header = ({
+  setLanguage,
+}: {
+  setLanguage: React.Dispatch<React.SetStateAction<DictionaryLanguage>>;
+}) => {
+  const { ROUTES } = useRouteDef();
   return (
     <S.HeaderContainer>
       <S.LogoContainer>
@@ -12,11 +18,17 @@ export const Header = () => {
             piotr<strong>ankus</strong>.pl
           </p>
         </S.Title>
+        <S.Button onClick={() => setLanguage(DictionaryLanguage.PL)}>
+          🇵🇱
+        </S.Button>
+        <S.Button onClick={() => setLanguage(DictionaryLanguage.EN)}>
+          🇬🇧
+        </S.Button>
       </S.LogoContainer>
       <S.MenuContainer>
         {ROUTES.map(({ name, path }) => {
           return (
-            <S.StyledNavLink key={name} to={path}>
+            <S.StyledNavLink key={name} end to={path}>
               {name}
             </S.StyledNavLink>
           );

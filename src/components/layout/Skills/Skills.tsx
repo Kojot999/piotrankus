@@ -1,10 +1,10 @@
 import * as S from "./Skills.styles";
 import { skills } from "../../../constants/skills";
 import { SkillsItem } from "./SkillsItem/SkillsItem";
-import { useTranslation } from "../../../hooks/useTranslations";
+import { useLanguageContext } from "../../../context/useLanguageContext";
 
 export const Skills = () => {
-  const T = useTranslation();
+  const T = useLanguageContext();
   return (
     <S.SkillsContainer>
       <S.TextContainer>

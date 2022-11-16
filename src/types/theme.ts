@@ -2,7 +2,7 @@ export type AppTheme = {
   colors: {
     background: string;
     font: string;
-    input: string;
+    hover: string;
     primary: string;
   };
 };

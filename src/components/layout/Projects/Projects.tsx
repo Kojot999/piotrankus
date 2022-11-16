@@ -1,10 +1,11 @@
-import { projects } from "../../../constants/projects";
-import { useTranslation } from "../../../hooks/useTranslations";
+import { useLanguageContext } from "../../../context/useLanguageContext";
+import { useProjectsDef } from "../../../hooks/useProjectsDef";
 import * as S from "./Projects.styles";
 import { ProjectsItem } from "./ProjectsItems/ProjectItem";
 
 export const Projects = () => {
-  const T = useTranslation();
+  const T = useLanguageContext();
+  const { projects } = useProjectsDef();
   return (
     <S.ProjectsContainer>
       <S.TextContainer>

@@ -6,6 +6,7 @@ export const ProjectsContainer = styled.div`
   margin-inline: 10vw;
   color: ${({ theme }) => theme.colors.font};
   gap: 40px;
+  margin-bottom: 30px;
 `;
 
 export const TextContainer = styled.div`
@@ -31,5 +32,6 @@ export const Text = styled.h2`
 
 export const Projects = styled.div`
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 `;
