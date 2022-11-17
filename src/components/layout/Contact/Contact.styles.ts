@@ -6,6 +6,15 @@ export const ContactContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   color: ${({ theme }) => theme.colors.font};
+  @media screen and (max-width: 920px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    @media screen and (max-width: 920px) {
+      align-items: center;
+      text-align: center;
+    }
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -18,7 +27,6 @@ export const Header = styled.h1`
   font-size: 30px;
   font-weight: bold;
   margin: 0;
-  width: 100%;
 `;
 
 export const Text = styled.h2`
@@ -28,6 +36,17 @@ export const Text = styled.h2`
   font-weight: normal;
   margin: 0;
   max-width: 420px;
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+  }
+`;
+
+export const TextMail = styled.h2`
+  font-size: 18px;
+  opacity: 70%;
+  font-weight: normal;
+  margin: 0;
+  white-space: nowrap;
 `;
 
 export const Container = styled.div`
@@ -35,6 +54,10 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0;
   gap: 5px;
+  @media screen and (max-width: 920px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const Wrapper = styled.div`
@@ -61,4 +84,10 @@ export const Email = styled.h3`
 
 export const HireImage = styled.img`
   height: 60vh;
+  @media screen and (max-width: 1200px) {
+    height: 45vh;
+  }
+  @media screen and (max-width: 380px) {
+    height: 40vh;
+  }
 `;

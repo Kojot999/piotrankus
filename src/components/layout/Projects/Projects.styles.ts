@@ -7,19 +7,24 @@ export const ProjectsContainer = styled.div`
   color: ${({ theme }) => theme.colors.font};
   gap: 40px;
   margin-bottom: 30px;
+  @media screen and (max-width: 990px) {
+    align-items: center;
+  }
 `;
 
 export const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 10px;
+  @media screen and (max-width: 990px) {
+    align-items: center;
+  }
 `;
 
 export const Header = styled.h1`
   font-size: 30px;
   font-weight: bold;
   margin: 0;
-  width: 100%;
 `;
 
 export const Text = styled.h2`
@@ -28,10 +33,16 @@ export const Text = styled.h2`
   opacity: 70%;
   margin: 0;
   max-width: 420px;
+  @media screen and (max-width: 990px) {
+    text-align: center;
+  }
 `;
 
 export const Projects = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @media screen and (max-width: 990px) {
+    flex-direction: column;
+  }
 `;
