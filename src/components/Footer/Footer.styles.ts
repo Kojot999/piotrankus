@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
 
 export const FooterContainer = styled.div`
   display: flex;
@@ -9,6 +8,11 @@ export const FooterContainer = styled.div`
   justify-content: space-between;
   background-color: ${({ theme }) => theme.colors.background};
   padding: 5px 80px;
+  @media screen and (max-width: 720px) {
+    flex-direction: column;
+    height: 90px;
+    padding: 10px 20px;
+  }
 `;
 
 export const LogoContainer = styled.div`
@@ -19,7 +23,6 @@ export const LogoContainer = styled.div`
 
 export const Logo = styled.img`
   width: 40px;
-  margin-right: 5px;
   margin-right: 10px;
 `;
 

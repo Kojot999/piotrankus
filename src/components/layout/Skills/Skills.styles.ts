@@ -6,6 +6,10 @@ export const SkillsContainer = styled.div`
   align-items: left;
   margin-inline: 10vw;
   margin-bottom: 30px;
+  @media screen and (max-width: 450px) {
+    margin-inline: 5vw;
+    text-align: center;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -31,4 +35,10 @@ export const Text = styled.h2`
 export const Skills = styled.div`
   display: flex;
   flex-wrap: wrap;
+  @media screen and (max-width: 450px) {
+    justify-content: center;
+  }
+  @media screen and (max-width: 400px) {
+    justify-content: center;
+  }
 `;

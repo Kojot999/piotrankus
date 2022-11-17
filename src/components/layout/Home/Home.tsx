@@ -8,7 +8,12 @@ export const Home = () => {
   return (
     <S.HomeContainer>
       <S.TextContainer>
-        <S.Header>{T.components.home.header}</S.Header>
+        <S.Wrapper>
+          <S.Header>{T.components.home.header}</S.Header>
+          <S.HeaderGradient>
+            &nbsp;{T.components.home.headerGradient}
+          </S.HeaderGradient>
+        </S.Wrapper>
         <S.Text>{T.components.home.text}</S.Text>
         <S.NavLinkContainer>
           <NavLink

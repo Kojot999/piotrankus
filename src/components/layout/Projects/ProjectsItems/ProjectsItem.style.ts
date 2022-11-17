@@ -28,6 +28,9 @@ export const Container = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 30px;
+  @media screen and (max-width: 390px) {
+    gap: 5px;
+  }
 `;
 
 export const Wrapper = styled.div``;

@@ -10,11 +10,17 @@ export const FormContainer = styled.div`
 
 export const Wrapper = styled.div`
   display: flex;
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 450px) {
+    align-items: center;
+  }
 `;
 
 export const StyledImput = styled.input`

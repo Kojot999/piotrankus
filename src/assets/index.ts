@@ -11,6 +11,9 @@ import mail from "./mail.svg";
 import arrowDown from "./arrow-dwon.svg";
 import resume from "./resume.png";
 import hire from "./hire.png";
+import gitBlack from "./gitBlack.svg";
+import linkedBlack from "./linkedBlack.svg";
+import hireMe from "./hireMe.svg";
 
 export const Images = {
   logo,
@@ -25,6 +28,9 @@ export const Images = {
   arrowDown,
   resume,
   hire,
+  gitBlack,
+  linkedBlack,
+  hireMe,
 };
 
 export const Files = {

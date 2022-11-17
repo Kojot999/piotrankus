@@ -12,7 +12,7 @@ export const Contact = () => {
         <S.Text>{T.components.contact.text}</S.Text>
         <S.Container>
           <S.Wrapper>
-            <S.Text>{T.components.contact.email}</S.Text>
+            <S.TextMail>{T.components.contact.email}</S.TextMail>
             <S.ImgMail src={Images.mail} />
             <S.Email>ankuspiotr@gmail.com</S.Email>
           </S.Wrapper>

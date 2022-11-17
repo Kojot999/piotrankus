@@ -5,11 +5,20 @@ export const ResumeContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-inline: 10vw;
+  align-items: center;
+  @media screen and (max-width: 920px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  @media screen and (max-width: 920px) {
+    align-items: center;
+    text-align: center;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -36,4 +45,10 @@ export const Text = styled.h2`
 
 export const ResumeImage = styled.img`
   height: 60vh;
+  @media screen and (max-width: 1200px) {
+    height: 45vh;
+  }
+  @media screen and (max-width: 380px) {
+    height: 40vh;
+  }
 `;

@@ -10,6 +10,7 @@ export const StyledNavLink = styled(NavLink)`
   padding: 5px 15px;
   text-decoration: none;
   filter: drop-shadow(0px 10px 30px rgba(18, 198, 255, 0.25));
+  white-space: nowrap;
 `;
 
 export const Image = styled.img`

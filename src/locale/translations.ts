@@ -12,7 +12,8 @@ export const translations = {
         message: "Send message",
       },
       home: {
-        header: "Your next",
+        header: "Your",
+        headerGradient: "next",
         text: "Front-end Developer",
         button: "check my projects",
       },
@@ -62,7 +63,8 @@ export const translations = {
         message: "Wyślij wiadomość",
       },
       home: {
-        header: "Twój nowy",
+        header: "Twój",
+        headerGradient: "nowy",
         text: "Front-end Developer",
         button: "sprawdź moje projekty",
       },
