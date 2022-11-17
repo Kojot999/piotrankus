@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   display: flex;
-  margin-inline: 10vw;
+  margin-inline: 13vw;
   justify-content: space-between;
   align-items: center;
   color: ${({ theme }) => theme.colors.font};

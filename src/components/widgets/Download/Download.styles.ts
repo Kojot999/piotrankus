@@ -14,6 +14,9 @@ export const Download = styled.a`
   padding-inline: 20px;
   filter: drop-shadow(0px 10px 30px rgba(18, 198, 255, 0.25));
   cursor: pointer;
+  :hover {
+    box-shadow: 0px 2px 10px #12c6ff;
+  }
 `;
 
 export const Image = styled.img`

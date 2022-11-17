@@ -19,10 +19,10 @@ export const Header = ({
           </p>
         </S.Title>
         <S.Button onClick={() => setLanguage(DictionaryLanguage.PL)}>
-          🇵🇱
+          <S.Language src={Images.pl} />
         </S.Button>
         <S.Button onClick={() => setLanguage(DictionaryLanguage.EN)}>
-          🇬🇧
+          <S.Language src={Images.eng} />
         </S.Button>
       </S.LogoContainer>
       <S.WrapperDesktop>

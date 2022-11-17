@@ -12,6 +12,7 @@ export const FooterContainer = styled.div`
     flex-direction: column;
     height: 90px;
     padding: 10px 20px;
+    margin-top: 30px;
   }
 `;
 
@@ -41,6 +42,10 @@ export const RightsContainer = styled.div`
   align-items: center;
   font-size: 10px;
   margin-left: 10px;
+  @media screen and (max-width: 400px) {
+    font-size: 8px;
+    white-space: nowrap;
+  }
 `;
 
 export const MessageContainer = styled.div``;

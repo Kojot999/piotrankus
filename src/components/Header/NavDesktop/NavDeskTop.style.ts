@@ -26,7 +26,10 @@ export const StyledNavLink = styled(NavLink)`
   :nth-child(5) {
     background: linear-gradient(358.97deg, #12c6ff -76.06%, #031cff 177.92%);
     border-radius: 10px;
-    padding: 1px 8px;
+    padding: 5px 10px;
+    :hover {
+      box-shadow: 0px 2px 10px #12c6ff;
+    }
   }
 `;
 

@@ -14,6 +14,8 @@ import hire from "./hire.png";
 import gitBlack from "./gitBlack.svg";
 import linkedBlack from "./linkedBlack.svg";
 import hireMe from "./hireMe.svg";
+import eng from "./eng.svg";
+import pl from "./pl.svg";
 
 export const Images = {
   logo,
@@ -31,6 +33,8 @@ export const Images = {
   gitBlack,
   linkedBlack,
   hireMe,
+  eng,
+  pl,
 };
 
 export const Files = {

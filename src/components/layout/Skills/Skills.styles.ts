@@ -4,7 +4,7 @@ export const SkillsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-inline: 10vw;
+  margin-inline: 20vw;
   margin-bottom: 30px;
   @media screen and (max-width: 450px) {
     margin-inline: 5vw;

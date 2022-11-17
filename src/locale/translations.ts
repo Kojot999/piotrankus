@@ -9,7 +9,7 @@ export const translations = {
         contact: "hire me",
       },
       footer: {
-        message: "Send message",
+        message: "send message",
       },
       home: {
         header: "Your",
@@ -45,7 +45,7 @@ export const translations = {
           name: "Full name / Company",
           email: "E-mail ",
           message: "Message",
-          button: "Send Message",
+          button: "send message",
         },
       },
     },
