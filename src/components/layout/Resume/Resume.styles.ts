@@ -4,7 +4,7 @@ export const ResumeContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-inline: 10vw;
+  margin-inline: 13vw;
   align-items: center;
   @media screen and (max-width: 920px) {
     display: flex;

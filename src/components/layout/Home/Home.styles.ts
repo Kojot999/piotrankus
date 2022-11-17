@@ -5,7 +5,8 @@ export const HomeContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-inline: 10vw;
+  margin-inline: 13vw;
+  gap: 10px;
   @media screen and (max-width: 920px) {
     display: flex;
     flex-direction: column-reverse;
@@ -59,6 +60,7 @@ export const Text = styled.h2`
   margin: 0;
   color: ${({ theme }) => theme.colors.font};
   margin-left: 30px;
+  white-space: nowrap;
   @media screen and (max-width: 1200px) {
     font-size: 25px;
   }
@@ -84,7 +86,7 @@ export const NavLinkContainer = styled.div`
 export const HomeImage = styled.img`
   height: 60vh;
   @media screen and (max-width: 1200px) {
-    height: 45vh;
+    height: 50vh;
   }
   @media screen and (max-width: 380px) {
     height: 40vh;

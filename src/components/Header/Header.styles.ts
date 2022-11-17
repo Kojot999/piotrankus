@@ -49,3 +49,8 @@ export const WrapperMobile = styled.div`
     display: none;
   }
 `;
+
+export const Language = styled.img`
+  width: 15px;
+  margin-left: 5px;
+`;
