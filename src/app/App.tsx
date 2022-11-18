@@ -19,13 +19,11 @@ export const App = () => {
       <LanguageContext.Provider value={{ language }}>
         <S.AppContainer>
           <Header setLanguage={setLanguage} />
-          <>
-            <Routes>
-              {ROUTES.map(({ path, name, component: View }) => (
-                <Route path={path} key={name} element={<View />}></Route>
-              ))}
-            </Routes>
-          </>
+          <Routes>
+            {ROUTES.map(({ path, name, component: View }) => (
+              <Route path={path} key={name} element={<View />}></Route>
+            ))}
+          </Routes>
           <Footer />
         </S.AppContainer>
       </LanguageContext.Provider>

@@ -16,6 +16,7 @@ import linkedBlack from "./linkedBlack.svg";
 import hireMe from "./hireMe.svg";
 import eng from "./eng.svg";
 import pl from "./pl.svg";
+import HomeAnimated from "./HomeAnimated";
 
 export const Images = {
   logo,
@@ -35,6 +36,7 @@ export const Images = {
   hireMe,
   eng,
   pl,
+  HomeAnimated,
 };
 
 export const Files = {

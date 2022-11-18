@@ -5,6 +5,7 @@ export const HomeContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
   margin-inline: 13vw;
   gap: 10px;
   @media screen and (max-width: 920px) {
@@ -80,15 +81,5 @@ export const NavLinkContainer = styled.div`
   }
   @media screen and (max-width: 920px) {
     margin-left: 0px;
-  }
-`;
-
-export const HomeImage = styled.img`
-  height: 60vh;
-  @media screen and (max-width: 1200px) {
-    height: 50vh;
-  }
-  @media screen and (max-width: 380px) {
-    height: 40vh;
   }
 `;

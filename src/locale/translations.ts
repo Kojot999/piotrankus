@@ -56,7 +56,7 @@ export const translations = {
         home: "start",
         projects: "projekty",
         skills: "umiejętności",
-        resume: "podsumowanie",
+        resume: "resume",
         contact: "kontakt",
       },
       footer: {

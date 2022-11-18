@@ -23,7 +23,7 @@ export const StyledForm = styled.form`
   }
 `;
 
-export const StyledImput = styled.input`
+export const StyledInput = styled.input`
   background: none;
   border: none;
   color: ${({ theme }) => theme.colors.font};
@@ -35,6 +35,21 @@ export const StyledImput = styled.input`
   font-size: 16px;
   padding: 10px;
   margin: 10px;
+`;
+
+export const StyledTextArea = styled.textarea`
+  background: none;
+  border: none;
+  color: ${({ theme }) => theme.colors.font};
+  text-decoration-line: underline;
+  text-decoration-style: "solid";
+  text-decoration-color: #12c6ff;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+  font-size: 16px;
+  padding: 10px;
+  margin: 10px;
+  resize: none;
 `;
 
 export const StyledButton = styled.button`

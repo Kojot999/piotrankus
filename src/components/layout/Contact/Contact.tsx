@@ -23,7 +23,7 @@ export const Contact = () => {
         </S.Container>
         <FormSection />
       </S.TextContainer>
-      <S.HireImage src={Images.hire} />
+      <S.HireImage src={Images.resume} />
     </S.ContactContainer>
   );
 };
