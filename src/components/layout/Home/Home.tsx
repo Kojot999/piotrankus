@@ -1,4 +1,5 @@
 import { Images } from "../../../assets";
+import HomeAnimated from "../../../assets/HomeAnimated";
 import { useLanguageContext } from "../../../context/useLanguageContext";
 import { NavLink } from "../../widgets";
 import * as S from "./Home.styles";
@@ -23,7 +24,7 @@ export const Home = () => {
           ></NavLink>
         </S.NavLinkContainer>
       </S.TextContainer>
-      <S.HomeImage src={Images.home} />
+      <HomeAnimated />
     </S.HomeContainer>
   );
 };

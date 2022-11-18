@@ -16,7 +16,10 @@ export const NavDesktop = () => {
       <S.Link href="https://github.com/Kojot999" target="blank">
         <S.Git src={Images.git} />
       </S.Link>
-      <S.Link href="https://github.com/Kojot999" target="blank">
+      <S.Link
+        href="https://www.linkedin.com/in/piotr-ankus-2b5731257/"
+        target="blank"
+      >
         <S.Linked src={Images.linked} />
       </S.Link>
     </S.MenuContainer>

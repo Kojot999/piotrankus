@@ -4,6 +4,7 @@ import * as S from "./Form.styles";
 import { Images } from "../../../../assets";
 import { useLanguageContext } from "../../../../context/useLanguageContext";
 import React from "react";
+import { useRef } from "react";
 
 const SERVICE_ID = "service_jh6ayee";
 const TEMPLATE_ID = "template_xk55a32";
@@ -11,10 +12,11 @@ const USER_ID = "rlaPYU6JTS3p4RwyR";
 
 export const FormSection: React.FC = () => {
   const T = useLanguageContext();
-
+  const form = useRef<HTMLFormElement>(null);
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, USER_ID).then(
+    let FormContent = form.current === null ? "" : form.current;
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, FormContent, USER_ID).then(
       (result) => {
         console.log(result.text);
         Swal.fire({
@@ -38,14 +40,14 @@ export const FormSection: React.FC = () => {
     <S.FormContainer>
       <S.StyledForm onSubmit={sendEmail}>
         <S.Wrapper>
-          <S.StyledImput
+          <S.StyledInput
             placeholder={T.components.contact.formContent.name}
             type="text"
             name="user_name"
             id="form-input-control-name"
             required
           />
-          <S.StyledImput
+          <S.StyledInput
             placeholder={T.components.contact.formContent.email}
             type="email"
             name="user_email"
@@ -53,9 +55,8 @@ export const FormSection: React.FC = () => {
             required
           />
         </S.Wrapper>
-        <S.StyledImput
+        <S.StyledTextArea
           placeholder={T.components.contact.formContent.message}
-          type="text"
           name="message"
           id="form-textarea-control-opinion"
           required
