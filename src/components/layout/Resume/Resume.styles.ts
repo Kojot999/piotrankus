@@ -10,6 +10,9 @@ export const ResumeContainer = styled.div`
     display: flex;
     flex-direction: column-reverse;
   }
+  @media screen and (min-width: 1500px) {
+    margin-inline: 18vw;
+  }
 `;
 
 export const Wrapper = styled.div`

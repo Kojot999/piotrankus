@@ -10,6 +10,9 @@ export const SkillsContainer = styled.div`
     margin-inline: 5vw;
     text-align: center;
   }
+  @media screen and (min-width: 1500px) {
+    margin-inline: 18vw;
+  }
 `;
 
 export const TextContainer = styled.div`

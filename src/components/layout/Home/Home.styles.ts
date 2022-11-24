@@ -5,12 +5,14 @@ export const HomeContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
   margin-inline: 13vw;
   gap: 10px;
   @media screen and (max-width: 920px) {
     display: flex;
     flex-direction: column-reverse;
+  }
+  @media screen and (min-width: 1500px) {
+    margin-inline: 18vw;
   }
 `;
 
