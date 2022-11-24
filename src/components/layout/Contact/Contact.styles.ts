@@ -15,6 +15,9 @@ export const ContactContainer = styled.div`
       text-align: center;
     }
   }
+  @media screen and (min-width: 1500px) {
+    margin-inline: 18vw;
+  }
 `;
 
 export const TextContainer = styled.div`

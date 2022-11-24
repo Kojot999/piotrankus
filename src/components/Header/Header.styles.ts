@@ -6,6 +6,9 @@ export const HeaderContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 20px 70px 0px 70px;
+  @media screen and (min-width: 1500px) {
+    margin-inline: 18vw;
+  }
   @media screen and (max-width: 460px) {
     margin: 20px 30px 0px 30px;
   }

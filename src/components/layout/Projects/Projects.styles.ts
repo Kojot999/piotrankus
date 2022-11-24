@@ -10,6 +10,9 @@ export const ProjectsContainer = styled.div`
   @media screen and (max-width: 990px) {
     align-items: center;
   }
+  @media screen and (min-width: 1500px) {
+    margin-inline: 18vw;
+  }
 `;
 
 export const TextContainer = styled.div`
