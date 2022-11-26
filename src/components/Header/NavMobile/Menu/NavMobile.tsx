@@ -14,13 +14,13 @@ export const NavMobile = ({ closeMenu }: any) => {
         );
       })}
       <S.Wrapper>
-        <S.Link href="https://github.com/Kojot999" target="blank">
-          <S.Git src={Images.gitBlack} />
-        </S.Link>
         <S.Link
           href="https://www.linkedin.com/in/piotr-ankus-2b5731257/"
           target="blank"
         >
+          <S.Git src={Images.gitBlack} />
+        </S.Link>
+        <S.Link href="https://github.com/Kojot999" target="blank">
           <S.Linked src={Images.linkedBlack} />
         </S.Link>
       </S.Wrapper>
