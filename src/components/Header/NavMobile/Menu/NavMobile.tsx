@@ -2,13 +2,22 @@ import * as S from "./NavMobile.styles";
 import { Images } from "../../../../assets";
 import { useRouteDef } from "../../../../hooks";
 
-export const NavMobile = ({ closeMenu }: any) => {
+export const NavMobile = ({
+  closeMenu,
+}: {
+  closeMenu: (value: boolean) => void;
+}) => {
   const { ROUTES } = useRouteDef();
   return (
     <S.MenuContainer>
       {ROUTES.map(({ name, path }) => {
         return (
-          <S.StyledNavLink key={name} end to={path} onClick={closeMenu}>
+          <S.StyledNavLink
+            key={name}
+            end
+            to={path}
+            onClick={() => closeMenu(false)}
+          >
             {name}
           </S.StyledNavLink>
         );
