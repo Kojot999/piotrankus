@@ -12,7 +12,8 @@ export const NavBurger = () => {
       document.body.style.overflowY = "scroll";
     }
   }, [showMenu]);
-  const closeMenu = () => setShowMenu(false);
+  const closeMenu = (value: boolean) => setShowMenu(value);
+
   return (
     <S.BurgerContainer>
       <Hamburger toggled={showMenu} toggle={setShowMenu} color="white" />
