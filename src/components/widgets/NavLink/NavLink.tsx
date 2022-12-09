@@ -1,6 +1,6 @@
 import * as S from "./NavLink.styles";
 
-export const NavLink: React.FC<{ path: string; text: string; img: any }> = ({
+export const NavLink: React.FC<{ path: string; text: string; img: string }> = ({
   path,
   text,
   img,
