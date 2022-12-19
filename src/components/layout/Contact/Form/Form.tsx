@@ -4,7 +4,6 @@ import * as S from "./Form.styles";
 import { Images } from "../../../../assets";
 import { useLanguageContext } from "../../../../context/useLanguageContext";
 import React from "react";
-import { useRef } from "react";
 
 const SERVICE_ID = "service_jh6ayee";
 const TEMPLATE_ID = "template_xk55a32";
@@ -12,11 +11,10 @@ const USER_ID = "rlaPYU6JTS3p4RwyR";
 
 export const FormSection: React.FC = () => {
   const T = useLanguageContext();
-  const form = useRef<HTMLFormElement>(null);
+
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    let FormContent = form.current === null ? "" : form.current;
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, FormContent, USER_ID).then(
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.currentTarget, USER_ID).then(
       (result) => {
         console.log(result.text);
         Swal.fire({
@@ -62,7 +60,7 @@ export const FormSection: React.FC = () => {
           required
         />
         <S.StyledButton type="submit" value="Send" color="green">
-          {T.components.contact.formContent.button}{" "}
+          {T.components.contact.formContent.button}
           <S.Image src={Images.message} />
         </S.StyledButton>
       </S.StyledForm>
