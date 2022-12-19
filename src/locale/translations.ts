@@ -89,9 +89,9 @@ export const translations = {
       },
       contact: {
         header: "kontakt",
-        text: "Jeśli potrzebujesz nowego fron-end develpoera nie czekaj skontaktuj się ze mną",
+        text: "Jeśli potrzebujesz nowego front-end developera nie czekaj skontaktuj się ze mną",
         email: "via e-mail",
-        form: "lub bezpośrednio przez formularz pniżej",
+        form: "lub bezpośrednio przez formularz poniżej",
         formContent: {
           name: "Imię Nazwisko / Firma",
           email: "E-mail ",
