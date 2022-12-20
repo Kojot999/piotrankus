@@ -29,7 +29,7 @@ export const translations = {
       },
       skills: {
         header: "my skills",
-        text: "on this page you can check my skills and tools that i use in my dayli work",
+        text: "on this page you can check my skills and tools that i use in my daily work",
       },
       resume: {
         header: "my résumé",
