@@ -29,7 +29,7 @@ export const translations = {
       },
       skills: {
         header: "my skills",
-        text: "on this page you can check my skills and tools that i use in my daily work",
+        text: "on this page you can check my skills and tools that I use in my daily work",
       },
       resume: {
         header: "my résumé",
@@ -80,7 +80,7 @@ export const translations = {
       },
       skills: {
         header: "moje umiejętności",
-        text: "tutaj możesz sprawdzić jakimi technologiami posługję się w codziennym dniu pracy",
+        text: "tutaj możesz sprawdzić jakimi technologiami posługuje się w codziennym dniu pracy",
       },
       resume: {
         header: "podsumowanie",
