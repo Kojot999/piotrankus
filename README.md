@@ -4,7 +4,7 @@
 <br />
 <div align="center">
 
-<h2><a href="https://piotrankus.pl/" align="center">piotrankus.pl </a>info</h2>
+<h2><a target="_blank" href="https://piotrankus.pl/" align="center">piotrankus.pl </a>info</h2>
 
   <p align="center">
     Personal app created to show my portfolio to the world, it contains basic info about me, my skills and my projects. 
@@ -13,7 +13,7 @@
   </p>
     <br/>
     <br/>
-  <a href="https://piotrankus.pl/">
+  <a target="_blank" href="https://piotrankus.pl/">
     <img src="https://github.com/Kojot999/Kojot999/blob/main/mockupAnkus.png?raw=true" alt="Logo">
   </a>
 </div>
