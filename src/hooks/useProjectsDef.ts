@@ -31,7 +31,7 @@ export const useProjectsDef = () => {
       },
       links: {
         git: "https://github.com/Kojot999/msTranslate",
-        website: "Docker",
+        website: "https://github.com/Kojot999/msTranslate",
         gitlogo: "logos/gitcopy.svg",
         weblogo: "logos/web.svg",
       },
